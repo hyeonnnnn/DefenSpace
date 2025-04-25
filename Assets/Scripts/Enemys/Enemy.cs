@@ -9,9 +9,11 @@ public class Enemy : MonoBehaviour
     private Movement2D movement2D;
     private EnemySpawner enemySpawner;
 
+
     public void Setup(EnemySpawner enemySpawner, Transform[] wayPoints)
     {
         movement2D = GetComponent<Movement2D>();
+
         this.enemySpawner = enemySpawner;
 
         wayPointCount = wayPoints.Length;
@@ -47,9 +49,6 @@ public class Enemy : MonoBehaviour
             currentIndex++;
             Vector3 direction = (wayPoints[currentIndex].position - transform.position).normalized;
             movement2D.MoveTo(direction);
-
-            // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            // transform.rotation = Quaternion.Euler(0, 0, angle);
         }
         else
         {

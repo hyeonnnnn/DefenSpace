@@ -22,10 +22,9 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             GameObject clone = Instantiate(enemyPrefab);
-            clone.transform.SetParent(transform);
+            // clone.transform.SetParent(transform);
 
             Enemy enemy = clone.GetComponent<Enemy>();
-
             enemy.Setup(this, wayPoints);
             enemyList.Add(enemy);
 

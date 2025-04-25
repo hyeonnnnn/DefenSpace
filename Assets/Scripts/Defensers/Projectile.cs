@@ -4,11 +4,13 @@ public class Projectile : MonoBehaviour
 {
     private Movement2D movement2D;
     private Transform target;
+    private int damage;
 
-    public void Setup(Transform target)
+    public void Setup(Transform target, int damage)
     {
         movement2D = GetComponent<Movement2D>();
         this.target = target;
+        this.damage = damage;
     }
 
     private void Update()
@@ -26,8 +28,6 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Ãæµ¹");
-
         if (collision.CompareTag("Enemy") == false)
         {
             return;
@@ -37,7 +37,7 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        collision.GetComponent<Enemy>().OnDie();
+        collision.GetComponent<EnemyHP>().TakeDamage(damage);
         Destroy(gameObject);
     }
 }
