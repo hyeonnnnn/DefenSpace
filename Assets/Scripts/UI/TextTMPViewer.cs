@@ -5,15 +5,12 @@ public class TextTMPViewer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textPlayerHP;
     [SerializeField] private PlayerHP playerHP;
+    [SerializeField] private TextMeshProUGUI textPlayerGold;
+    [SerializeField] private PlayerGold playerGold;
 
     private void Update()
     {
-        if (playerHP == null || textPlayerHP == null)
-        {
-            Debug.LogWarning("PlayerHP 또는 TextPlayerHP가 null입니다.");
-            return;
-        }
-
         textPlayerHP.text = playerHP.CurrentHP + " / " + playerHP.MaxHP;
+        textPlayerGold.text = playerGold.CurrentGold.ToString();
     }
 }

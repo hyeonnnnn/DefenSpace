@@ -6,4 +6,5 @@ public class EnemyData : ScriptableObject
     public string enemyName;
     public int maxHp;
     public float moveSpeed;
+    public int gold;
 }
