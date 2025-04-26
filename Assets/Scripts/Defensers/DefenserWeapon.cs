@@ -31,17 +31,6 @@ public class DefenserWeapon : MonoBehaviour
         StartCoroutine(weaponState.ToString());
     }
 
-    /*
-    private void RotateToTarget()
-    {
-        float dx = attackTarget.position.x - transform.position.x;
-        float dy = attackTarget.position.y - transform.position.y;
-
-        float degree = Mathf.Atan2(dy, dx) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, degree);
-    }
-    */
-
     private IEnumerator SearchTarget()
     {
         while (true)

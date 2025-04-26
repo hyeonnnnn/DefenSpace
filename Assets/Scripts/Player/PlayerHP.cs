@@ -25,7 +25,7 @@ public class PlayerHP : MonoBehaviour
 
         if (currentHP <= 0)
         {
-
+            // 게임 오버
         }
     }
 

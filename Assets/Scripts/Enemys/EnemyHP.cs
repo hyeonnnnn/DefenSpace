@@ -4,15 +4,15 @@ using System.Collections.Generic;
 
 public class EnemyHP : MonoBehaviour
 {
-    [SerializeField] EnemyData enemyData;
-    private float currentHP;
+    [SerializeField] private int maxHP;
+    private int currentHP;
     private bool isDie = false;
     private Enemy enemy;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        currentHP = enemyData.maxHp;
+        currentHP = maxHP;
         enemy = GetComponent<Enemy>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -22,7 +22,7 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (isDie)
         {

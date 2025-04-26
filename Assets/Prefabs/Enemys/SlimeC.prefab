@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a2b844ac0bb8448049e38d6934144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 472a675e05f44cb498023bf755bcc000, type: 2}
+  maxHP: 3
 --- !u!1 &8815474491737877929
 GameObject:
   m_ObjectHideFlags: 0
