@@ -3,6 +3,7 @@ using UnityEngine;
 public class ObjectDetector : MonoBehaviour
 {
     [SerializeField] private DefenserSpawner defenserSpawner;
+    [SerializeField] private DefenserDataViewer defenserDataViewer;
 
     private Camera mainCamera;
     private Ray ray;
@@ -12,7 +13,7 @@ public class ObjectDetector : MonoBehaviour
     {
         mainCamera = Camera.main;
     }
-
+     
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,6 +25,10 @@ public class ObjectDetector : MonoBehaviour
                 if (hit.transform.CompareTag("Tile"))
                 {
                     defenserSpawner.SpawnDenfenser(hit.transform);
+                }
+                else if (hit.transform.CompareTag("Defenser"))
+                {
+                    defenserDataViewer.OnPanel(hit.transform);
                 }
             }
         }

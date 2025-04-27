@@ -29,9 +29,8 @@ public class WaveSystem : MonoBehaviour
     private IEnumerator WaitAndStartNextWave()
     {
         isWaitingForNextWave = true;
-        Debug.Log("a");
         yield return new WaitForSeconds(waveTerm);
-        Debug.Log("b");
+        Debug.Log("웨이브 시작");
 
         StartWave();
         isWaitingForNextWave = false;

@@ -14,9 +14,15 @@ public class DefenserWeapon : MonoBehaviour
     [SerializeField] private float attackRate = 0.5f;
     [SerializeField] private float attackRange = 2.0f;
     [SerializeField] private int attackDamage = 1;
+    private int level = 0;
     private WeaponState weaponState = WeaponState.SearchTarget;
     private Transform attackTarget = null;
     private EnemySpawner enemySpawner;
+
+    public float Damage => attackDamage;
+    public float Rate => attackRate;
+    public float Range => attackRange;
+    public int Level => level + 1;
 
     public void Setup(EnemySpawner enemySpawner)
     {
