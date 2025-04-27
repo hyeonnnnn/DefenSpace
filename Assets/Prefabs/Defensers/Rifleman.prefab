@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5339233874288749290}
   - component: {fileID: -1640775313555775138}
   m_Layer: 0
-  m_Name: Rifler
+  m_Name: Rifleman
   m_TagString: Defenser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

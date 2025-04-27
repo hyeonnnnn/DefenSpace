@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-guid: a05d49e5687fd3c4380912ac00e2db9c
-AssetOrigin:
-  serializedVersion: 1
-  productId: 199010
-  packageName: Dark Theme UI
-  packageVersion: 1.1
-  assetPath: Assets/Dark UI/Free/CIRCLE2PXLAR.png
-  uploadId: 700413
+guid: 0764ecb9da0ad9345a05499d265385cb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7597931811327312105
+    second: "\u2014Pngtree\u2014space game alien exploration background_1592274_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 280
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +68,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -102,12 +98,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014space game alien exploration background_1592274_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4961
+        height: 3543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ff13ee549be8690800000000000000
+      internalID: -7597931811327312105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
