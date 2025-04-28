@@ -6,6 +6,8 @@ public class PlayerHP : MonoBehaviour
 {
     [SerializeField] private int maxHP = 10;
     [SerializeField] private Image screenRedImage;
+    [SerializeField] private GameManager gameManager;
+
     private int currentHP;
 
     public int MaxHP => maxHP;
@@ -25,7 +27,7 @@ public class PlayerHP : MonoBehaviour
 
         if (currentHP <= 0)
         {
-            // 게임 오버
+            gameManager.GameOver();
         }
     }
 

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class EnemyHP : MonoBehaviour
 {
     [SerializeField] private int maxHP;
-    private int currentHP;
+    private float currentHP;
     private bool isDie = false;
     private Enemy enemy;
     private SpriteRenderer spriteRenderer;
@@ -22,7 +22,7 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (isDie)
         {

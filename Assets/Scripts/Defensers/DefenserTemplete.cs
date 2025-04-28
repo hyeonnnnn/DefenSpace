@@ -14,5 +14,6 @@ public class DefenserTemplete : ScriptableObject
         public float rate;
         public float range;
         public int cost;
+        public int sell;
     }
 }

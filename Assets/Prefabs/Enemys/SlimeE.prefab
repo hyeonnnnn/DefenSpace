@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7cad8dbc5fc8343b8da003a56f6f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 5
   moveDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &3175119160634999353
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a2b844ac0bb8448049e38d6934144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 20
+  maxHP: 45
 --- !u!1 &6160595095778605637
 GameObject:
   m_ObjectHideFlags: 0

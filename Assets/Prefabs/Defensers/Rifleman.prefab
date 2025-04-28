@@ -46,11 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4d4e67c1f0b6d44820de58a1242ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenserTemplete: {fileID: 11400000, guid: 4119b8852d0311a4582f233f6f83551c, type: 2}
   projectilePrefab: {fileID: 4689663661181913835, guid: 764ed938b5ac1a145978bc65db6cac66, type: 3}
   spawnPoint: {fileID: 3740894585800633498}
-  attackRate: 0.1
-  attackRange: 10
-  attackDamage: 1
 --- !u!136 &-1640775313555775138
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -136,6 +134,14 @@ PrefabInstance:
     - target: {fileID: 6917992153863859432, guid: 5f265aa0b73846a2b249e97abf3b5eb2, type: 3}
       propertyPath: m_Name
       value: rifle_down
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917992153863859433, guid: 5f265aa0b73846a2b249e97abf3b5eb2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917992153863859433, guid: 5f265aa0b73846a2b249e97abf3b5eb2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1578645035
       objectReference: {fileID: 0}
     - target: {fileID: 6917992153863859433, guid: 5f265aa0b73846a2b249e97abf3b5eb2, type: 3}
       propertyPath: m_SpriteSortPoint

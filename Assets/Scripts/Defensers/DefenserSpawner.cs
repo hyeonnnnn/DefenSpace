@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class DefenserSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject defenserPrefab;
-    [SerializeField] private int defenserSpawnGold = 50;
+    [SerializeField] DefenserTemplete defenserTemplete;
     [SerializeField] EnemySpawner enemySpawner;
     [SerializeField] PlayerGold playerGold;
 
     public void SpawnDenfenser(Transform tileTransform)
     {
-        if (playerGold.CurrentGold < defenserSpawnGold)
+        if (playerGold.CurrentGold < defenserTemplete.weapon[0].cost)
         {
             return;
         }
@@ -21,12 +20,16 @@ public class DefenserSpawner : MonoBehaviour
             return;
         }
         
-        playerGold.CurrentGold -= defenserSpawnGold;
+        playerGold.CurrentGold -= defenserTemplete.weapon[0].cost;
         tile.IsPlaceDefenser = true;
 
         Vector3 position = tileTransform.position + Vector3.back;
-        GameObject clone = Instantiate(defenserPrefab, tileTransform.position, Quaternion.identity);
-        clone.GetComponent<DefenserWeapon>().Setup(enemySpawner);
+        GameObject clone = Instantiate(defenserTemplete.defenserPrefab, position, Quaternion.identity);
+        clone.GetComponent<DefenserWeapon>().Setup(enemySpawner, playerGold, tile);
 
+        // 첫 번째 자식 스트라이트로 정렬
+        Transform firstChild = clone.transform.GetChild(0);
+        SpriteRenderer sr = firstChild.GetComponent<SpriteRenderer>();
+        sr.sortingOrder = -(int)(clone.transform.position.y * 100);
     }
 }

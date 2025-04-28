@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     private int currentIndex = 0;
     private Movement2D movement2D;
     private EnemySpawner enemySpawner;
-    private int gold = 10;
+    private int gold = 5;
 
 
     public void Setup(EnemySpawner enemySpawner, Transform[] wayPoints)
